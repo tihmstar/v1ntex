@@ -5,7 +5,7 @@ In the end it wasn't exactly *just* copy&pasting v0rtex and jelbrekTime :o
 ---
 
 - tested on 11.2.6
-- could work up to 12.1.2
+- works up to 11.4.1
 - gets you tfp0
 
 ##### Make sure to connect a lightning to headphone jack adapter prior to running this on a device without headphone jack!   
@@ -17,7 +17,8 @@ Offsets hardcoded for:
 Get your own if you wanna run it on something else ;)
 
 Note:  
-Exploit relies on a specific structure of ipc_port_t, it might be neccessary to update more than *just* offsets, if that changed in iOS 12.
+~~Exploit relies on a specific structure of ipc_port_t, it might be neccessary to update more than *just* offsets, if that changed in iOS 12.~~  
+One technique used here stopped working in iOS 12 because of the changes made to os_refcnt  
 
 PS: If you run the project *as it is* it might end up in a black screen after the app exits.
 Device shouldn't panic, just doublepress the home button to get back to the app launcher and close the app.
